@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import rasterio
 
-BASE_PATH = '/N/slate/jhgearon/activefire/'
+BASE_PATH = '<your-base-path>'
 IMAGES_PATH = BASE_PATH + 'dataset/images/patches/'
 MASKS_PATH = BASE_PATH + 'dataset/masks/voting/'
 
