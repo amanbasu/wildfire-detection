@@ -1,5 +1,7 @@
 # Leveraging Vision Transformers for Enhanced Wildfire Detection and Characterization
 
+<img src="https://img.shields.io/github/stars/amanbasu/wildfire-detection?color=0088ff"/> <img src="https://img.shields.io/github/forks/amanbasu/wildfire-detection?color=ff8800"/> <img src="https://img.shields.io/badge/version-torch==1.9.0+cu111-green?logo=pytorch"/>
+
 In this project, we use the active fire dataset from https://github.com/pereira-gha/activefire ([data link](https://drive.google.com/drive/folders/1GIcAev09Ye4hXsSu0Cjo5a6BfL3DpSBm)) and try to improve over their results. We use two Vision Transformer networks: [Swin-Unet](https://github.com/HuCaoFighting/Swin-Unet) and [TransUnet](https://github.com/Beckschen/TransUNet), and one CNN-based UNet network. We show that ViT can outperform well-trained and specialized CNNs to detect wildfires on a previously published dataset of LandSat-8 imagery (Pereira et al.). One of our ViTs outperforms the baseline CNN comparison by 0.92%. However, we find our own implementation of CNN-based UNet to perform best in every category, showing their sustained utility in image tasks. Overall, ViTs are comparably capable in detecting wildfires as CNNs, though well-tuned CNNs are still the best technique for detecting wildfire with our UNet providing an IoU of 93.58%, better than the baseline UNet by some 4.58%. 
 
 ## File description
