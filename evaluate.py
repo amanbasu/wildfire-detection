@@ -42,7 +42,6 @@ def statistics(y_true, y_pred):
     return tn, fp, fn, tp
 
 def show_stats(y_pred, y_true, accuracy):
-
     _, fp, fn, tp = statistics(np.array(y_true), np.array(y_pred))
     P = 100 * float(tp)/(tp + fp)
     R = 100 * float(tp)/(tp + fn)
