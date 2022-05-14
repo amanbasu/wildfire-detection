@@ -95,21 +95,12 @@ def get_model(name):
     if name == 'swin':
         model = swin_unet(IMG_SIZE, BATCH_SIZE).to(device)
         path = './train_output/model_checkpoint_swinUnet.pt'
-    elif name == 'swin_augment':
-        model = swin_unet(IMG_SIZE, BATCH_SIZE).to(device)
-        path = './train_output/model_checkpoint_swinUnet_augment.pt'
     elif name == 'trans':
         model = trans_unet(IMG_SIZE).to(device)
         path = './train_output/model_checkpoint_transUnet.pt'
-    elif name == 'trans_augment':
-        model = trans_unet(IMG_SIZE).to(device)
-        path = './train_output/model_checkpoint_transUnet_augment.pt'
     elif name == 'unet':
         model = unet(n_channels=CHANNELS).to(device)
         path = './train_output/model_checkpoint_unetours.pt'
-    elif name == 'unet_augment':
-        model = unet(n_channels=CHANNELS).to(device)
-        path = './train_output/model_checkpoint_unetours_augment.pt'
     
     return model, path
 
